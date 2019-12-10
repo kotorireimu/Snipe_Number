@@ -1,24 +1,30 @@
-# README
+# 数当てゲームのdb設計図
+## 使用したいテーブル
+### userテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|password|string|null: false|
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### Association
+- belongs_to :battle
 
-Things you may want to cover:
+### battleテーブル
+|Column|Type|Options|
+|------|----|-------|
+|number_of_matches|integer|null: false|
+|number_of_win|integer|null: false|
+|number_of_loss|integer|null: false|
+|user_id|integer|null: false, foreign_key: true|
 
-* Ruby version
+#### Association
+- belongs_to :user
 
-* System dependencies
+### アビリティテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
 
-* Configuration
+#### Association
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
