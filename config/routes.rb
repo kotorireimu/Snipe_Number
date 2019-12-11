@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
+  get 'terminals/index'
+  root "terminals#index"
   get 'battles/index'
-
-  root "battles#index"
 end
