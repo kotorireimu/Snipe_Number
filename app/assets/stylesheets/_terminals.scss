@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.top-ber{
+  width: 100vw;
+  height: 20vh;
+  background-color: rgb(10, 8, 141);
+  &__title{
+    padding: 5vh 15vw;
+    width: 70vw;
+    height: 10vh;
+    font-size: 100%;
+    color: rgb(192, 2, 2);
+  }
+}
+
+
+.content{
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(3, 142, 223);
+}
