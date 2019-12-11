@@ -19,6 +19,7 @@
     line-height: 20vh;
     font-size: 1rem;
     color: rgb(5, 230, 117);
+    text-decoration: none;
   }
 }
 
@@ -27,7 +28,7 @@
   height: 80vh;
   background-color: rgb(3, 142, 223);
   &__man{
-    padding: 3%;
+    padding: 5%;
     display: flex; justify-content: center;
     &__btn{
       display: inline-block;
