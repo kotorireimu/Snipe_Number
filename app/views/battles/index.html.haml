@@ -1,4 +1,13 @@
 .field
+
+  - def initialize
+    - # 相手の番号
+    - @opp_nums = [*"0".."9"].sample(3)
+    - # ゲームが続いているかの状態
+    - @condition = true
+
+
+
   .left-content
     = render "player_name"
     = render "player_answer"
@@ -6,5 +15,5 @@
     = render "result"
     = render "attack"
   .right-content
-    = render "opponent_name"
-    = render "opponent_answer"
+    - # = render "opponent_name"
+    - # = render "opponent_answer"

@@ -1,3 +1,20 @@
 .center-top
+  - # EAT と BITE の数を調べる
+  - def check(call_nums)
+    - @eat_count = 0
+    - @bite_count = 0
+    - call_nums.chars.each_with_index do |call_num, call_position|
+      - opp_positon = @opp_nums.index(call_num)
+      - next unless opp_positon
+      - if opp_positon == call_position
+        - @eat_count += 1
+      - else
+        - @bite_count += 1
   .center-top__resut
-    3 SNIPE 0 TARGET
+    - # EAT と BITE の数を知らせる
+    - def announce_result
+      -if @eat_count == 3
+        - puts "3 EAT"
+        - @condition = false # ゲーム終了
+      - else
+        - puts "#{@eat_count} EAT - #{@bite_count} BITE"

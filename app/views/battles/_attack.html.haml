@@ -1,5 +1,3 @@
 .center-under
-  .center-under__text
-    予想する数字を入力してください
-  .center-under__btn
-    Snipe!!
+  %input.center-under__text{:maxlength => "3", :type => "tel", placeholder: "半角数字で入力してください"}/
+  = link_to "Snipe!!" , battles_index_path ,class: "center-under__btn"
